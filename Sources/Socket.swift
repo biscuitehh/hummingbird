@@ -6,6 +6,7 @@
 //
 
 import Strand
+import C7
 
 #if os(Linux)
     import Glibc
@@ -57,7 +58,7 @@ public enum SocketError: ErrorProtocol {
 /// A `Socket` represents a socket descriptor.
 public final class Socket {
     let socketDescriptor: Int32
-    private var closed = false
+    public private(set) var closed = false
 
     /** 
      Initialize a `Socket` with a given socket descriptor. The socket descriptor must be open, and further operations on
@@ -416,17 +417,26 @@ public final class Socket {
      - throws:  `SocketError.SocketClosed` if the socket is already closed.
                 `SocketError.CloseFailed` when the system close command fials
     */
-    public func close() throws {
-        guard !closed else { throw SocketError.socketClosed }
-        guard systemClose(socketDescriptor) != -1 else {
-            #if swift(>=3.0)
-                let message = String(validatingUTF8: strerror(errno))
-            #else
-                let message = String.fromCString(strerror(errno))
-            #endif
-            throw SocketError.closeFailed(code: Int(errno), message: message)
+    public func close() -> Bool {
+        if closed {
+            return false
         }
-        closed = true
+
+        do {
+            guard systemClose(socketDescriptor) != -1 else {
+                #if swift(>=3.0)
+                    let message = String(validatingUTF8: strerror(errno))
+                #else
+                    let message = String.fromCString(strerror(errno))
+                #endif
+                throw SocketError.closeFailed(code: Int(errno), message: message)
+            }
+            closed = true
+            return true
+        } catch {
+            return false
+        }
+        
     }
 
     // MARK: - Host resolution
@@ -482,6 +492,21 @@ public final class Socket {
 
     private func sockadd_list_cast(p: UnsafeMutablePointer<UnsafeMutablePointer<Int8>>) -> UnsafeMutablePointer<UnsafeMutablePointer<in_addr>> {
         return UnsafeMutablePointer<UnsafeMutablePointer<in_addr>>(p)
+    }
+}
+
+extension Socket: C7.Stream {
+    public func receive(max maxBytes: Int) throws -> Data {
+        let bytes: [Byte] = try self.receive(maximumBytes: maxBytes)
+        return Data(bytes)
+    }
+
+    public func send(data: Data) throws {
+        try self.send(data.bytes)
+    }
+
+    public func flush() throws {
+
     }
 }
 
