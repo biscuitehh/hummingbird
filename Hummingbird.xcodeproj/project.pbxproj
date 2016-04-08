@@ -1,982 +1,561 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C35479A61CB8719F00D64E53 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		C35479A71CB8719F00D64E53 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		C35479A81CB8719F00D64E53 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		C35479A91CB8719F00D64E53 /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		C35479AA1CB8719F00D64E53 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		C35479AB1CB8719F00D64E53 /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		C35479AC1CB8719F00D64E53 /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		_LinkFileRef_C7 /* libC7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_C7" /* libC7.dylib */; };
-		_LinkFileRef_Hummingbird /* libHummingbird.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Hummingbird" /* libHummingbird.dylib */; };
-		_LinkFileRef_S4 /* libS4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_S4" /* libS4.dylib */; };
-		_LinkFileRef_Strand /* libStrand.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Strand" /* libStrand.dylib */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStream.swift" /* AsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift" /* AsyncStream.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift" /* AsyncStreamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift" /* AsyncStreamClient.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift" /* AsyncStreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift" /* AsyncStreamServer.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/Byte.swift" /* Byte.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift" /* Byte.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift" /* CaseInsensitiveString.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift" /* CaseInsensitiveString.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/CustomDataStore.swift" /* CustomDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift" /* CustomDataStore.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/Data.swift" /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift" /* Data.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/Drain.swift" /* Drain.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift" /* Drain.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/Storage.swift" /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift" /* Storage.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/Stream.swift" /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift" /* Stream.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamClient.swift" /* StreamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift" /* StreamClient.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamSequence.swift" /* StreamSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift" /* StreamSequence.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift */; };
-		"__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncClient.swift" /* AsyncClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncClient.swift" /* AsyncClient.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncMiddleware.swift" /* AsyncMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncMiddleware.swift" /* AsyncMiddleware.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncResponder.swift" /* AsyncResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncResponder.swift" /* AsyncResponder.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRoute.swift" /* AsyncRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRoute.swift" /* AsyncRoute.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRouteMatcher.swift" /* AsyncRouteMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouteMatcher.swift" /* AsyncRouteMatcher.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRouter.swift" /* AsyncRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouter.swift" /* AsyncRouter.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncServer.swift" /* AsyncServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncServer.swift" /* AsyncServer.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Body.swift" /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Body.swift" /* Body.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Client.swift" /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Client.swift" /* Client.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/HeaderName.swift" /* HeaderName.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderName.swift" /* HeaderName.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/HeaderValues.swift" /* HeaderValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderValues.swift" /* HeaderValues.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Headers.swift" /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Headers.swift" /* Headers.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Message.swift" /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Message.swift" /* Message.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Method.swift" /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Method.swift" /* Method.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Middleware.swift" /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Middleware.swift" /* Middleware.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Request.swift" /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Request.swift" /* Request.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestConvertible.swift" /* RequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RequestConvertible.swift" /* RequestConvertible.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestInitializable.swift" /* RequestInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RequestInitializable.swift" /* RequestInitializable.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestParser.swift" /* RequestParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RequestParser.swift" /* RequestParser.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestRepresentable.swift" /* RequestRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RequestRepresentable.swift" /* RequestRepresentable.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestSerializer.swift" /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RequestSerializer.swift" /* RequestSerializer.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Responder.swift" /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Responder.swift" /* Responder.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Response.swift" /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Response.swift" /* Response.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseConvertible.swift" /* ResponseConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseConvertible.swift" /* ResponseConvertible.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseInitializable.swift" /* ResponseInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseInitializable.swift" /* ResponseInitializable.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseParser.swift" /* ResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseParser.swift" /* ResponseParser.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseRepresentable.swift" /* ResponseRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseRepresentable.swift" /* ResponseRepresentable.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseSerializer.swift" /* ResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseSerializer.swift" /* ResponseSerializer.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Route.swift" /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Route.swift" /* Route.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/RouteMatcher.swift" /* RouteMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/RouteMatcher.swift" /* RouteMatcher.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Router.swift" /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Router.swift" /* Router.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/S4.swift" /* S4.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/S4.swift" /* S4.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Server.swift" /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Server.swift" /* Server.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Status.swift" /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Status.swift" /* Status.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Sources/Version.swift" /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Sources/Version.swift" /* Version.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Tests/S4/BodyTests.swift" /* BodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Tests/S4/BodyTests.swift" /* BodyTests.swift */; };
-		"__src_cc_ref_Packages/S4-0.2.1/Tests/S4/ExampleTests.swift" /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/S4-0.2.1/Tests/S4/ExampleTests.swift" /* ExampleTests.swift */; };
-		"__src_cc_ref_Packages/Strand-1.1.0/Sources/Strand.swift" /* Strand.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift" /* Strand.swift */; };
-		__src_cc_ref_Sources/Socket.swift /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Socket.swift /* Socket.swift */; };
-		"__src_cc_ref_Sources/String+Transcoding.swift" /* String+Transcoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/String+Transcoding.swift" /* String+Transcoding.swift */; };
-		__src_cc_ref_Tests/Hummingbird/SocketTests.swift /* SocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Hummingbird/SocketTests.swift /* SocketTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C35479AD1CB871A000D64E53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_C7";
-			remoteInfo = C7;
-		};
-		C35479AE1CB871A000D64E53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_S4";
-			remoteInfo = S4;
-		};
-		C35479AF1CB871A000D64E53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_Strand";
-			remoteInfo = Strand;
-		};
-		C35479B01CB871A000D64E53 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = __RootObject_ /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "______Target_Hummingbird";
-			remoteInfo = Hummingbird;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = /Users/tanner/Developer/vapor/Hummingbird/Package.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift" /* AsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStream.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift" /* AsyncStreamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamClient.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift" /* AsyncStreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamServer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift" /* Byte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Byte.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift" /* CaseInsensitiveString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseInsensitiveString.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift" /* CustomDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataStore.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift" /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift" /* Drain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drain.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift" /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift" /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift" /* StreamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamClient.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift" /* StreamSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSequence.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamServer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncClient.swift" /* AsyncClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncClient.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncMiddleware.swift" /* AsyncMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncMiddleware.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncResponder.swift" /* AsyncResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResponder.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRoute.swift" /* AsyncRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRoute.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouteMatcher.swift" /* AsyncRouteMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRouteMatcher.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouter.swift" /* AsyncRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncRouter.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncServer.swift" /* AsyncServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncServer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Body.swift" /* Body.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Client.swift" /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderName.swift" /* HeaderName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderName.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderValues.swift" /* HeaderValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderValues.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Headers.swift" /* Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Headers.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Message.swift" /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Method.swift" /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Middleware.swift" /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Request.swift" /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestConvertible.swift" /* RequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConvertible.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestInitializable.swift" /* RequestInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInitializable.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestParser.swift" /* RequestParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParser.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestRepresentable.swift" /* RequestRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRepresentable.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestSerializer.swift" /* RequestSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSerializer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Responder.swift" /* Responder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Response.swift" /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseConvertible.swift" /* ResponseConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseConvertible.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseInitializable.swift" /* ResponseInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseInitializable.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseParser.swift" /* ResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParser.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseRepresentable.swift" /* ResponseRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseRepresentable.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseSerializer.swift" /* ResponseSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerializer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Route.swift" /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/RouteMatcher.swift" /* RouteMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMatcher.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Router.swift" /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/S4.swift" /* S4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S4.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Server.swift" /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Status.swift" /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Sources/Version.swift" /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Tests/S4/BodyTests.swift" /* BodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTests.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/S4-0.2.1/Tests/S4/ExampleTests.swift" /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift" /* Strand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strand.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/Socket.swift /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Sources/String+Transcoding.swift" /* String+Transcoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Transcoding.swift"; sourceTree = "<group>"; };
-		__PBXFileRef_Tests/Hummingbird/SocketTests.swift /* SocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTests.swift; sourceTree = "<group>"; };
-		"_____Product_C7" /* libC7.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libC7.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_C7TestSuite" /* C7TestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = C7TestSuite.xctest; path = C7.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_Hummingbird" /* libHummingbird.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libHummingbird.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = HummingbirdTestSuite.xctest; path = Hummingbird.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_S4" /* libS4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libS4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_S4TestSuite" /* S4TestSuite.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = S4TestSuite.xctest; path = S4.testsuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"_____Product_Strand" /* libStrand.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libStrand.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		"___LinkPhase_C7" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_C7TestSuite" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				_LinkFileRef_C7 /* libC7.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_Hummingbird" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				C35479A81CB8719F00D64E53 /* libC7.dylib in Frameworks */,
-				C35479A91CB8719F00D64E53 /* libS4.dylib in Frameworks */,
-				_LinkFileRef_Strand /* libStrand.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_HummingbirdTestSuite" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				C35479AA1CB8719F00D64E53 /* libC7.dylib in Frameworks */,
-				C35479AB1CB8719F00D64E53 /* libS4.dylib in Frameworks */,
-				C35479AC1CB8719F00D64E53 /* libStrand.dylib in Frameworks */,
-				_LinkFileRef_Hummingbird /* libHummingbird.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_S4" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				C35479A61CB8719F00D64E53 /* libC7.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_S4TestSuite" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				C35479A71CB8719F00D64E53 /* libC7.dylib in Frameworks */,
-				_LinkFileRef_S4 /* libS4.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		"___LinkPhase_Strand" /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		TestProducts_ /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				"_____Product_C7TestSuite" /* C7TestSuite.xctest */,
-				"_____Product_S4TestSuite" /* S4TestSuite.xctest */,
-				"_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
-		"___RootGroup_" = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Package.swift /* Package.swift */,
-				"_____Sources_" /* Sources */,
-				"_______Tests_" /* Tests */,
-				"____Products_" /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		"____Products_" /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				TestProducts_ /* Tests */,
-				"_____Product_Strand" /* libStrand.dylib */,
-				"_____Product_C7" /* libC7.dylib */,
-				"_____Product_S4" /* libS4.dylib */,
-				"_____Product_Hummingbird" /* libHummingbird.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		"_____Sources_" /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				"_______Group_Strand" /* Strand */,
-				"_______Group_C7" /* C7 */,
-				"_______Group_S4" /* S4 */,
-				"_______Group_Hummingbird" /* Hummingbird */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		"_______Group_C7" /* C7 */ = {
-			isa = PBXGroup;
-			children = (
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift" /* AsyncStream.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift" /* AsyncStreamClient.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift" /* AsyncStreamServer.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift" /* Byte.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift" /* CaseInsensitiveString.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift" /* CustomDataStore.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift" /* Data.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift" /* Drain.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift" /* Storage.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift" /* Stream.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift" /* StreamClient.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift" /* StreamSequence.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift */,
-				"__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift */,
-			);
-			name = C7;
-			path = "Packages/C7-0.2.0/Sources";
-			sourceTree = "<group>";
-		};
-		"_______Group_C7TestSuite" /* C7.testsuite */ = {
-			isa = PBXGroup;
-			children = (
-				"__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift */,
-			);
-			name = C7.testsuite;
-			path = "Packages/C7-0.2.0/Tests/C7";
-			sourceTree = "<group>";
-		};
-		"_______Group_Hummingbird" /* Hummingbird */ = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Sources/Socket.swift /* Socket.swift */,
-				"__PBXFileRef_Sources/String+Transcoding.swift" /* String+Transcoding.swift */,
-			);
-			name = Hummingbird;
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		"_______Group_HummingbirdTestSuite" /* Hummingbird.testsuite */ = {
-			isa = PBXGroup;
-			children = (
-				__PBXFileRef_Tests/Hummingbird/SocketTests.swift /* SocketTests.swift */,
-			);
-			name = Hummingbird.testsuite;
-			path = Tests/Hummingbird;
-			sourceTree = "<group>";
-		};
-		"_______Group_S4" /* S4 */ = {
-			isa = PBXGroup;
-			children = (
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncClient.swift" /* AsyncClient.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncMiddleware.swift" /* AsyncMiddleware.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncResponder.swift" /* AsyncResponder.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRoute.swift" /* AsyncRoute.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouteMatcher.swift" /* AsyncRouteMatcher.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncRouter.swift" /* AsyncRouter.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/AsyncServer.swift" /* AsyncServer.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Body.swift" /* Body.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Client.swift" /* Client.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderName.swift" /* HeaderName.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Headers.swift" /* Headers.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/HeaderValues.swift" /* HeaderValues.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Message.swift" /* Message.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Method.swift" /* Method.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Middleware.swift" /* Middleware.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Request.swift" /* Request.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestConvertible.swift" /* RequestConvertible.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestInitializable.swift" /* RequestInitializable.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestParser.swift" /* RequestParser.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestRepresentable.swift" /* RequestRepresentable.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RequestSerializer.swift" /* RequestSerializer.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Responder.swift" /* Responder.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Response.swift" /* Response.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseConvertible.swift" /* ResponseConvertible.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseInitializable.swift" /* ResponseInitializable.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseParser.swift" /* ResponseParser.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseRepresentable.swift" /* ResponseRepresentable.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/ResponseSerializer.swift" /* ResponseSerializer.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Route.swift" /* Route.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/RouteMatcher.swift" /* RouteMatcher.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Router.swift" /* Router.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/S4.swift" /* S4.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Server.swift" /* Server.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Status.swift" /* Status.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Sources/Version.swift" /* Version.swift */,
-			);
-			name = S4;
-			path = "Packages/S4-0.2.1/Sources";
-			sourceTree = "<group>";
-		};
-		"_______Group_S4TestSuite" /* S4.testsuite */ = {
-			isa = PBXGroup;
-			children = (
-				"__PBXFileRef_Packages/S4-0.2.1/Tests/S4/BodyTests.swift" /* BodyTests.swift */,
-				"__PBXFileRef_Packages/S4-0.2.1/Tests/S4/ExampleTests.swift" /* ExampleTests.swift */,
-			);
-			name = S4.testsuite;
-			path = "Packages/S4-0.2.1/Tests/S4";
-			sourceTree = "<group>";
-		};
-		"_______Group_Strand" /* Strand */ = {
-			isa = PBXGroup;
-			children = (
-				"__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift" /* Strand.swift */,
-			);
-			name = Strand;
-			path = "Packages/Strand-1.1.0/Sources";
-			sourceTree = "<group>";
-		};
-		"_______Tests_" /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				"_______Group_C7TestSuite" /* C7.testsuite */,
-				"_______Group_S4TestSuite" /* S4.testsuite */,
-				"_______Group_HummingbirdTestSuite" /* Hummingbird.testsuite */,
-			);
-			name = Tests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"______Target_C7" /* C7 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_C7" /* Build configuration list for PBXNativeTarget "C7" */;
-			buildPhases = (
-				CompilePhase_C7 /* Sources */,
-				"___LinkPhase_C7" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = C7;
-			productName = C7;
-			productReference = "_____Product_C7" /* libC7.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		"______Target_C7TestSuite" /* C7.testsuite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_C7TestSuite" /* Build configuration list for PBXNativeTarget "C7.testsuite" */;
-			buildPhases = (
-				CompilePhase_C7TestSuite /* Sources */,
-				"___LinkPhase_C7TestSuite" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_C7 /* PBXTargetDependency */,
-			);
-			name = C7.testsuite;
-			productName = C7TestSuite;
-			productReference = "_____Product_C7TestSuite" /* C7TestSuite.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"______Target_Hummingbird" /* Hummingbird */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_Hummingbird" /* Build configuration list for PBXNativeTarget "Hummingbird" */;
-			buildPhases = (
-				CompilePhase_Hummingbird /* Sources */,
-				"___LinkPhase_Hummingbird" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_C7 /* PBXTargetDependency */,
-				__Dependency_S4 /* PBXTargetDependency */,
-				__Dependency_Strand /* PBXTargetDependency */,
-			);
-			name = Hummingbird;
-			productName = Hummingbird;
-			productReference = "_____Product_Hummingbird" /* libHummingbird.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		"______Target_HummingbirdTestSuite" /* Hummingbird.testsuite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_HummingbirdTestSuite" /* Build configuration list for PBXNativeTarget "Hummingbird.testsuite" */;
-			buildPhases = (
-				CompilePhase_HummingbirdTestSuite /* Sources */,
-				"___LinkPhase_HummingbirdTestSuite" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_C7 /* PBXTargetDependency */,
-				__Dependency_S4 /* PBXTargetDependency */,
-				__Dependency_Strand /* PBXTargetDependency */,
-				__Dependency_Hummingbird /* PBXTargetDependency */,
-			);
-			name = Hummingbird.testsuite;
-			productName = HummingbirdTestSuite;
-			productReference = "_____Product_HummingbirdTestSuite" /* HummingbirdTestSuite.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"______Target_S4" /* S4 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_S4" /* Build configuration list for PBXNativeTarget "S4" */;
-			buildPhases = (
-				CompilePhase_S4 /* Sources */,
-				"___LinkPhase_S4" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_C7 /* PBXTargetDependency */,
-			);
-			name = S4;
-			productName = S4;
-			productReference = "_____Product_S4" /* libS4.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		"______Target_S4TestSuite" /* S4.testsuite */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_S4TestSuite" /* Build configuration list for PBXNativeTarget "S4.testsuite" */;
-			buildPhases = (
-				CompilePhase_S4TestSuite /* Sources */,
-				"___LinkPhase_S4TestSuite" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				__Dependency_C7 /* PBXTargetDependency */,
-				__Dependency_S4 /* PBXTargetDependency */,
-			);
-			name = S4.testsuite;
-			productName = S4TestSuite;
-			productReference = "_____Product_S4TestSuite" /* S4TestSuite.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"______Target_Strand" /* Strand */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = "_______Confs_Strand" /* Build configuration list for PBXNativeTarget "Strand" */;
-			buildPhases = (
-				CompilePhase_Strand /* Sources */,
-				"___LinkPhase_Strand" /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Strand;
-			productName = Strand;
-			productReference = "_____Product_Strand" /* libStrand.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		__RootObject_ /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Hummingbird" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = "___RootGroup_";
-			productRefGroup = "____Products_" /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"______Target_Strand" /* Strand */,
-				"______Target_C7" /* C7 */,
-				"______Target_C7TestSuite" /* C7.testsuite */,
-				"______Target_S4" /* S4 */,
-				"______Target_S4TestSuite" /* S4.testsuite */,
-				"______Target_Hummingbird" /* Hummingbird */,
-				"______Target_HummingbirdTestSuite" /* Hummingbird.testsuite */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CompilePhase_C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStream.swift" /* AsyncStream.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift" /* AsyncStreamClient.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift" /* AsyncStreamServer.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/Byte.swift" /* Byte.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift" /* CaseInsensitiveString.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/CustomDataStore.swift" /* CustomDataStore.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/Data.swift" /* Data.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/Drain.swift" /* Drain.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/Storage.swift" /* Storage.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/Stream.swift" /* Stream.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamClient.swift" /* StreamClient.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamSequence.swift" /* StreamSequence.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/StreamServer.swift" /* StreamServer.swift in Sources */,
-				"__src_cc_ref_Packages/C7-0.2.0/Sources/URI.swift" /* URI.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_C7TestSuite /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				"__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift" /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_Hummingbird /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				__src_cc_ref_Sources/Socket.swift /* Socket.swift in Sources */,
-				"__src_cc_ref_Sources/String+Transcoding.swift" /* String+Transcoding.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_HummingbirdTestSuite /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				__src_cc_ref_Tests/Hummingbird/SocketTests.swift /* SocketTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_S4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncClient.swift" /* AsyncClient.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncMiddleware.swift" /* AsyncMiddleware.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncResponder.swift" /* AsyncResponder.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRoute.swift" /* AsyncRoute.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRouteMatcher.swift" /* AsyncRouteMatcher.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncRouter.swift" /* AsyncRouter.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/AsyncServer.swift" /* AsyncServer.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Body.swift" /* Body.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Client.swift" /* Client.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/HeaderName.swift" /* HeaderName.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Headers.swift" /* Headers.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/HeaderValues.swift" /* HeaderValues.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Message.swift" /* Message.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Method.swift" /* Method.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Middleware.swift" /* Middleware.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Request.swift" /* Request.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestConvertible.swift" /* RequestConvertible.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestInitializable.swift" /* RequestInitializable.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestParser.swift" /* RequestParser.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestRepresentable.swift" /* RequestRepresentable.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RequestSerializer.swift" /* RequestSerializer.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Responder.swift" /* Responder.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Response.swift" /* Response.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseConvertible.swift" /* ResponseConvertible.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseInitializable.swift" /* ResponseInitializable.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseParser.swift" /* ResponseParser.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseRepresentable.swift" /* ResponseRepresentable.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/ResponseSerializer.swift" /* ResponseSerializer.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Route.swift" /* Route.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/RouteMatcher.swift" /* RouteMatcher.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Router.swift" /* Router.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/S4.swift" /* S4.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Server.swift" /* Server.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Status.swift" /* Status.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Sources/Version.swift" /* Version.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_S4TestSuite /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				"__src_cc_ref_Packages/S4-0.2.1/Tests/S4/BodyTests.swift" /* BodyTests.swift in Sources */,
-				"__src_cc_ref_Packages/S4-0.2.1/Tests/S4/ExampleTests.swift" /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CompilePhase_Strand /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				"__src_cc_ref_Packages/Strand-1.1.0/Sources/Strand.swift" /* Strand.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		__Dependency_C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "______Target_C7" /* C7 */;
-			targetProxy = C35479AD1CB871A000D64E53 /* PBXContainerItemProxy */;
-		};
-		__Dependency_Hummingbird /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "______Target_Hummingbird" /* Hummingbird */;
-			targetProxy = C35479B01CB871A000D64E53 /* PBXContainerItemProxy */;
-		};
-		__Dependency_S4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "______Target_S4" /* S4 */;
-			targetProxy = C35479AE1CB871A000D64E53 /* PBXContainerItemProxy */;
-		};
-		__Dependency_Strand /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "______Target_Strand" /* Strand */;
-			targetProxy = C35479AF1CB871A000D64E53 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		_ReleaseConf_C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = C7;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_C7TestSuite /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = C7TestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_Hummingbird /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = Hummingbird;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_HummingbirdTestSuite /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = HummingbirdTestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_S4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = S4;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_S4TestSuite /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = S4TestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		_ReleaseConf_Strand /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = Strand;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		"___DebugConf_C7" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = C7;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_C7TestSuite" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = C7TestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_Hummingbird" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = Hummingbird;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_HummingbirdTestSuite" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = HummingbirdTestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_S4" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = S4;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_S4TestSuite" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = S4TestSuite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"___DebugConf_Strand" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_INSTALL_NAME_BASE = "$(CONFIGURATION_BUILD_DIR)";
-				ENABLE_TESTABILITY = YES;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_MODULE_NAME = Strand;
-				PRODUCT_NAME = "lib$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		"_____Release_" /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		"_______Debug_" /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		"___RootConfs_" /* Build configuration list for PBXProject "Hummingbird" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"_______Debug_" /* Debug */,
-				"_____Release_" /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_C7" /* Build configuration list for PBXNativeTarget "C7" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_C7" /* Debug */,
-				_ReleaseConf_C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_C7TestSuite" /* Build configuration list for PBXNativeTarget "C7.testsuite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_C7TestSuite" /* Debug */,
-				_ReleaseConf_C7TestSuite /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_Hummingbird" /* Build configuration list for PBXNativeTarget "Hummingbird" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_Hummingbird" /* Debug */,
-				_ReleaseConf_Hummingbird /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_HummingbirdTestSuite" /* Build configuration list for PBXNativeTarget "Hummingbird.testsuite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_HummingbirdTestSuite" /* Debug */,
-				_ReleaseConf_HummingbirdTestSuite /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_S4" /* Build configuration list for PBXNativeTarget "S4" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_S4" /* Debug */,
-				_ReleaseConf_S4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_S4TestSuite" /* Build configuration list for PBXNativeTarget "S4.testsuite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_S4TestSuite" /* Debug */,
-				_ReleaseConf_S4TestSuite /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		"_______Confs_Strand" /* Build configuration list for PBXNativeTarget "Strand" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				"___DebugConf_Strand" /* Debug */,
-				_ReleaseConf_Strand /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = __RootObject_ /* Project object */;
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_Strand, ______Target_C7, ______Target_C7TestSuite, ______Target_Hummingbird, ______Target_HummingbirdTestSuite);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = '/Users/tanner/Developer/vapor/Hummingbird/Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Sources_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_Strand = {
+            isa = PBXGroup;
+            name = Strand;
+            path = 'Packages/Strand-1.1.0/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift');
+        };
+        '__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Strand.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Strand = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Strand;
+            buildPhases = (CompilePhase_Strand, ___LinkPhase_Strand);
+            buildRules = ();
+            dependencies = ();
+            name = Strand;
+            productName = Strand;
+            productReference = _____Product_Strand;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_Strand = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'Strand.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Strand = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/Strand-1.1.0/Sources/Strand.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_Strand = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/Strand-1.1.0/Sources/Strand.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/Strand-1.1.0/Sources/Strand.swift';
+        };
+        _LinkFileRef_Strand = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Strand;
+        };
+        _______Confs_Strand = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Strand, _ReleaseConf_Strand);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Strand = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = Strand; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; SWIFT_OPTIMIZATION_LEVEL = -Onone; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Strand = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = Strand; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Release;
+        };
+        __Dependency_Strand = {
+            isa = PBXTargetDependency;
+            target = ______Target_Strand;
+        };
+        _______Group_C7 = {
+            isa = PBXGroup;
+            name = C7;
+            path = 'Packages/C7-0.2.0/Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift', '__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift');
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'AsyncStream.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'AsyncStreamClient.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'AsyncStreamServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Byte.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'CaseInsensitiveString.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'CustomDataStore.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Data.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Drain.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Storage.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Stream.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StreamClient.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StreamSequence.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'StreamServer.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'URI.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_C7 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_C7;
+            buildPhases = (CompilePhase_C7, ___LinkPhase_C7);
+            buildRules = ();
+            dependencies = ();
+            name = C7;
+            productName = C7;
+            productReference = _____Product_C7;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_C7 = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'C7.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_C7 = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStream.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/Byte.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/CustomDataStore.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/Data.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/Drain.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/Storage.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/Stream.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamClient.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamSequence.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamServer.swift', '__src_cc_ref_Packages/C7-0.2.0/Sources/URI.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_C7 = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStream.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStream.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamClient.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/AsyncStreamServer.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/Byte.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/Byte.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/CaseInsensitiveString.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/CustomDataStore.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/CustomDataStore.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/Data.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/Data.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/Drain.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/Drain.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/Storage.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/Storage.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/Stream.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/Stream.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamClient.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamClient.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamSequence.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamSequence.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/StreamServer.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/StreamServer.swift';
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Sources/URI.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Sources/URI.swift';
+        };
+        _LinkFileRef_C7 = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_C7;
+        };
+        _______Confs_C7 = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_C7, _ReleaseConf_C7);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_C7 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = C7; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; SWIFT_OPTIMIZATION_LEVEL = -Onone; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_C7 = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = C7; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Release;
+        };
+        __Dependency_C7 = {
+            isa = PBXTargetDependency;
+            target = ______Target_C7;
+        };
+        _______Group_C7TestSuite = {
+            isa = PBXGroup;
+            name = C7.testsuite;
+            path = 'Packages/C7-0.2.0/Tests/C7';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift');
+        };
+        '__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ExampleTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_C7TestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_C7TestSuite;
+            buildPhases = (CompilePhase_C7TestSuite, ___LinkPhase_C7TestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_C7);
+            name = C7.testsuite;
+            productName = C7TestSuite;
+            productReference = _____Product_C7TestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_C7TestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'C7TestSuite.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_C7TestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_C7TestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Packages/C7-0.2.0/Tests/C7/ExampleTests.swift';
+        };
+        _LinkFileRef_C7TestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_C7TestSuite;
+        };
+        _______Confs_C7TestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_C7TestSuite, _ReleaseConf_C7TestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_C7TestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; PRODUCT_MODULE_NAME = C7TestSuite; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; SWIFT_OPTIMIZATION_LEVEL = -Onone; EMBEDDED_CONTENT_CONTAINS_SWIFT = YES; PRODUCT_NAME = '$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_C7TestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; PRODUCT_MODULE_NAME = C7TestSuite; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; EMBEDDED_CONTENT_CONTAINS_SWIFT = YES; PRODUCT_NAME = '$(TARGET_NAME)'; };
+            name = Release;
+        };
+        __Dependency_C7TestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_C7TestSuite;
+        };
+        _______Group_Hummingbird = {
+            isa = PBXGroup;
+            name = Hummingbird;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/Socket.swift', '__PBXFileRef_Sources/String+Transcoding.swift');
+        };
+        '__PBXFileRef_Sources/Socket.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Socket.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/String+Transcoding.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'String+Transcoding.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Hummingbird = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Hummingbird;
+            buildPhases = (CompilePhase_Hummingbird, ___LinkPhase_Hummingbird);
+            buildRules = ();
+            dependencies = (__Dependency_C7, __Dependency_Strand);
+            name = Hummingbird;
+            productName = Hummingbird;
+            productReference = _____Product_Hummingbird;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_Hummingbird = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'Hummingbird.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Hummingbird = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/Socket.swift', '__src_cc_ref_Sources/String+Transcoding.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_Hummingbird = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7, _LinkFileRef_Strand);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/Socket.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Socket.swift';
+        };
+        '__src_cc_ref_Sources/String+Transcoding.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/String+Transcoding.swift';
+        };
+        _LinkFileRef_Hummingbird = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Hummingbird;
+        };
+        _______Confs_Hummingbird = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Hummingbird, _ReleaseConf_Hummingbird);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Hummingbird = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = Hummingbird; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; SWIFT_OPTIMIZATION_LEVEL = -Onone; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Hummingbird = {
+            isa = XCBuildConfiguration;
+            buildSettings = { DYLIB_INSTALL_NAME_BASE = '$(CONFIGURATION_BUILD_DIR)'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = Hummingbird; ENABLE_TESTABILITY = YES; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Release;
+        };
+        __Dependency_Hummingbird = {
+            isa = PBXTargetDependency;
+            target = ______Target_Hummingbird;
+        };
+        _______Group_HummingbirdTestSuite = {
+            isa = PBXGroup;
+            name = Hummingbird.testsuite;
+            path = 'Tests/Hummingbird';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/Hummingbird/SocketTests.swift');
+        };
+        '__PBXFileRef_Tests/Hummingbird/SocketTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SocketTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_HummingbirdTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_HummingbirdTestSuite;
+            buildPhases = (CompilePhase_HummingbirdTestSuite, ___LinkPhase_HummingbirdTestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_C7, __Dependency_Strand, __Dependency_Hummingbird);
+            name = Hummingbird.testsuite;
+            productName = HummingbirdTestSuite;
+            productReference = _____Product_HummingbirdTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_HummingbirdTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'HummingbirdTestSuite.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_HummingbirdTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/Hummingbird/SocketTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        ___LinkPhase_HummingbirdTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_C7, _LinkFileRef_Strand, _LinkFileRef_Hummingbird);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/Hummingbird/SocketTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/Hummingbird/SocketTests.swift';
+        };
+        _LinkFileRef_HummingbirdTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_HummingbirdTestSuite;
+        };
+        _______Confs_HummingbirdTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_HummingbirdTestSuite, _ReleaseConf_HummingbirdTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_HummingbirdTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; PRODUCT_MODULE_NAME = HummingbirdTestSuite; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; SWIFT_OPTIMIZATION_LEVEL = -Onone; EMBEDDED_CONTENT_CONTAINS_SWIFT = YES; PRODUCT_NAME = '$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_HummingbirdTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; PRODUCT_MODULE_NAME = HummingbirdTestSuite; OTHER_SWIFT_FLAGS = -DXcode; COMBINE_HIDPI_IMAGES = YES; MACOSX_DEPLOYMENT_TARGET = '10.10'; EMBEDDED_CONTENT_CONTAINS_SWIFT = YES; PRODUCT_NAME = '$(TARGET_NAME)'; };
+            name = Release;
+        };
+        __Dependency_HummingbirdTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_HummingbirdTestSuite;
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_Strand, _______Group_C7, _______Group_Hummingbird);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_C7TestSuite, _______Group_HummingbirdTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_C7TestSuite, _______Group_HummingbirdTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_C7TestSuite, _____Product_HummingbirdTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_Strand, _____Product_C7, _____Product_Hummingbird);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
 }
